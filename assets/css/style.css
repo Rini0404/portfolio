@@ -144,6 +144,7 @@ flex-wrap: wrap;
   top: 50%;
   float: left; 
   margin-left: 250px;
+  height: 68%;
 }
 
 .line3 { 
@@ -263,6 +264,7 @@ flex-wrap: wrap;
 #info-name { 
   font-size: 22px;
 }
+
 
 #contact-me { 
   color: var(--lightblue); 
