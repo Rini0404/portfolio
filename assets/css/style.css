@@ -172,7 +172,7 @@ flex-wrap: wrap;
   padding: 40px;
   display: flex; 
   position: absolute;
-  background-image: url(/assets/images/neb.jpg);
+  background-image:url('../images/neb.jpg');
   background-position: center; 
   width: 100%;
   top: 8.5%;
@@ -235,20 +235,20 @@ flex-wrap: wrap;
 
 
 .box1{
-  background-image: url(/assets/images/pject.png);
+  background-image: url(../images/pject.png)
 }
 .box2{
-  background-image: url(/assets/images/qrCode.PNG);
+  background-image: url(../images/qrCode.PNG);
   background-size:contain ;
 }
 .box3{
-  background-image: url(/assets/images/ok.png);
+  background-image: url(../images/no.jpg);
 }
 .box4{
-  background-image: url(/assets/images/no.jpg);
+  background-image: url(../images/ok.png);
 }
 .box5{
-  background-image: url(/assets/images/tut.jpg); 
+  background-image: url(../images/tut.jpg); 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
