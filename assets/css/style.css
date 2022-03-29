@@ -9,7 +9,7 @@
 }
 
 body {
-  background-image: linear-gradient(to bottom, steelblue, white); 
+  background-image: linear-gradient(to bottom, steelblue, white ); 
   background-size: cover; 
   background-repeat: no-repeat;
 }
@@ -47,6 +47,8 @@ ul a {
 
 
 nav { 
+  font-weight: bold;
+  font-size: 20px;
   float: right;
   font-family: 'Red Hat Mono', monospace;
 }
@@ -71,25 +73,13 @@ h5 {
 
 }
 
-.information { 
 
-  position: absolute;
-    display: inline-block;
-    display: flex;
-    
-    padding-left: 290px;    
-    justify-content: space-between; 
-    top: 125%; 
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+
 
 li{
   padding: 0px 10px; 
   display: inline; 
-  color: black; 
-  font-weight: bold;
-  font-size: 20px;
+
 }
 
 line{
@@ -104,15 +94,25 @@ line{
   margin-left: 250px;
 }
 
+.information { 
+  position: absolute;
+  bottom: -35%;
+  left: 15%;
+  word-spacing: 100px;
+justify-content: space-evenly;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
 .rini{
   Position: absolute;
   display: flex; 
-  justify-content: flex-start;
   text-align: right;
-  bottom: -45%;
-  left: -15px; 
+  bottom: -42%;
+  left: -90px; 
   float: right;
 }
+
 
 .info, .info2 { 
   border:3px var(--lightblue) solid; 
@@ -171,14 +171,11 @@ line{
   padding: 40px;
   display: flex; 
   position: absolute;
-  background-image: url(/assets/images/images.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url(/assets/images/neb.jpg);
   background-position: center; 
   width: 100%;
   top: 8.5%;
   padding-top:10px; 
-  transition: height 0.66s ease-out;
 
 }
 
@@ -193,10 +190,11 @@ line{
 }
 
 .big-box {
-  min-height: 400px; 
-  min-width: 97.5rem;
+  transition: height 0.66s ease-out;
   border: 3px solid var(--lightblue);
   margin: 7px;
+  width:97rem;
+  height:25rem;
 }
 
 .top-card { 
@@ -231,6 +229,7 @@ line{
   margin: 7px;
   background-position: center;
   background-size: cover;
+  max-width:100%;height:auto;
 }
 
 
@@ -263,4 +262,32 @@ line{
 }
 #info-name { 
   font-size: 22px;
+}
+
+#contact-me { 
+  color: var(--lightblue); 
+  font-weight: bold;
+  font-size: 25px;
+}
+@media screen and (max-width: 576px) {
+  .bottom-card { 
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+  
+  }
+}
+
+@media screen and (max-width: 576px) { 
+  .top-card{
+    max-width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .container {
+    margin: 1em 2em;
+  }
 }
